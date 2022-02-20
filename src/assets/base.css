@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: #606c76;
+}
+
+.material-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #606c76;
+  user-select: none;
+}
