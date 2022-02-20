@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     async fetchData(query) {
-      const result = await fetch(`api/unidades/search/${query.toUpperCase()}`);
+      const result = await fetch(`${this.url}/api/unidades/search/${query.toUpperCase()}`);
       if (result.ok) {
         const data = await result.json();
         if (data.length == 1) {
