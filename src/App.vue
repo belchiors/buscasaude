@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       items: [],
-      url: 'https://ubs-webapi.herokuapp.com/'
+      url: 'https://ubs-webapi.herokuapp.com'
     }
   },
   methods: {

@@ -1,7 +1,7 @@
 <script>
 export default {
   name: 'NavMenu',
-  emits: ['submit', 'onItemClick'],
+  emits: ['submit', 'onItemClick', 'nearme'],
   props: {
     items: {
       type: Array,
@@ -25,9 +25,12 @@ export default {
       </a>
     </nav>
     <div class="search">
-      <input v-model="query" class="input" type="text" placeholder />
+      <input v-model="query" class="input" type="text" placeholder="Digite o nome da unidade de saúde" />
       <button class="button" @click="$emit('submit', query)">
         <i class="material-icons material-icons-outlined">search</i>
+      </button>
+      <button class="button" @click="$emit('nearme')">
+        <i class="material-icons material-icons-outlined">near_me</i>
       </button>
     </div>
   </div>

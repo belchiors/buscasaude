@@ -33,7 +33,7 @@ export default {
     }
   },
   mounted() {
-    this.map = L.map('map-container').setView(this.originPoint, this.zoomLevel);
+    this.map = L.map('map').setView(this.originPoint, this.zoomLevel);
     this.layerGroup = L.layerGroup().addTo(this.map);
 
     this.customIcon = L.icon({
@@ -41,7 +41,7 @@ export default {
       iconSize:     [64, 64],
       iconAnchor:   [32, 63],
       popupAnchor:  [-0, -63]
-  });
+    });
 
     // Add a tile layer to the map with proper attributions.
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -52,12 +52,12 @@ export default {
 </script>
 
 <template>
-  <div id="map-container"></div>
+  <div id="map"></div>
 </template>
 
 <style scoped>
 
-#map-container {
+#map {
   position: fixed;
   width: 100%;
   height: 100%;
