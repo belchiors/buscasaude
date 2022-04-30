@@ -38,7 +38,7 @@ export default {
 
     this.customIcon = L.icon({
       iconUrl: '/public/marker.png',
-      iconSize:     [64, 64],
+      iconSize:     [56, 56],
       iconAnchor:   [32, 63],
       popupAnchor:  [-0, -63]
     });
