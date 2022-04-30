@@ -29,9 +29,9 @@ export default {
       <button class="button" @click="$emit('submit', query)">
         <i class="material-icons material-icons-outlined">search</i>
       </button>
-      <button class="button" @click="$emit('nearme')">
+      <!-- <button class="button" @click="$emit('nearme')">
         <i class="material-icons material-icons-outlined">near_me</i>
-      </button>
+      </button> -->
     </div>
   </div>
   <aside class="search-results">
