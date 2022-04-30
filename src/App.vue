@@ -8,12 +8,12 @@ export default {
   data() {
     return {
       items: [],
-      url: 'https://ubs-webapi.herokuapp.com'
+      url: 'https://ubs-webapi.herokuapp.com/api/unidades'
     }
   },
   methods: {
     async fetchData(query) {
-      const result = await fetch(`${this.url}/api/unidades/search/${query.toUpperCase()}`);
+      const result = await fetch(`${this.url}?q=${query}`);
       if (result.ok) {
         const data = await result.json();
         if (data.length == 1) {
